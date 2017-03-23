@@ -1,0 +1,9 @@
+import urllib2
+import json
+
+f = urllib2.urlopen('http://api.wunderground.com/api/972ef893cd0f7a2d/geolookup/conditions/q/IA/Cedar_Rapids.json')
+json_string = f.read()
+parsed_json = json.loads(json_string)
+Location = parsed_json['location']['city']
+temp_f  =  parsed_json['current_observation']['temp_f']
+print (location,temp_f)

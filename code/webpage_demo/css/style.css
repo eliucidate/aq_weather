@@ -1,0 +1,148 @@
+rect.bordered {
+    stroke: #E6E6E6;
+    stroke-width:2px;   
+}
+
+#title {
+	font-family: sans-serif;
+    font-size: 2.2em;
+    font-weight: bold;
+    margin: 20px 42px;
+    color: #0431B4;
+    padding-top: 20px;
+}
+
+#author {
+	font-family: sans-serif;
+    font-size: 1.1em;
+    margin: 5px 45px;
+    color: #41b6c4;
+    padding-bottom: 45px;
+}
+
+.sub_title{
+	font: 18px sans-serif;
+	font-weight: bold;	
+	margin: 20px 45px;
+}
+
+.description{
+	font: 14.5px sans-serif;
+	margin: 10px 45px;
+	line-height: 140%;
+}
+
+.input-field {
+  margin-left: 45px;
+  border: 1px solid #111;
+  background: transparent;
+  width: 170px;
+  padding: 5px 5px 5px 5px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  height: 40px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#submit{
+  width: 90px;
+  height: 45px;
+  font-size: 20px;
+  font-family: "Arvo", "Helvetica Neue", Helvetica, arial, sans-serif;
+  font-weight: bold;
+  color: #FE642E;
+  margin-top: 25px;
+  margin-left: 45px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#predict{
+  width: 230px;
+  height: 45px;
+  font-size: 20px;
+  font-family: "Arvo", "Helvetica Neue", Helvetica, arial, sans-serif;
+  font-weight: bold;
+  color: #B40404;
+  margin-top: 25px;
+  margin-left: 45px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#message {
+  display: block;
+  width: 800px;
+  height: 500px;
+  margin-top: 25px;
+  margin-left: 40px;
+  padding: 0.5em 10px;
+  text-align: left;
+  font-size: 110%;
+  font-family: "Arvo", "Helvetica Neue", Helvetica, arial, sans-serif;
+  font-weight: 400;
+}
+
+
+select {
+   margin-left: 45px;
+   border: 1px solid #111;
+   background: transparent;
+   width: 180px;
+   padding: 5px 35px 5px 5px;
+   font-size: 18px;
+   border: 1px solid #ccc;
+   height: 40px;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
+
+.aq_button {
+  margin-left: 35px;
+   border: 1px solid #111;
+   background: transparent;
+   width: 80px;
+   padding: 5px 35px 5px 5px;
+   font-size: 14px;
+   border: 1px solid #ccc;
+   height: 30px;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
+
+#line_chart {
+  width: 900px;
+  height: 490px;
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+div.tooltip { 
+    position: absolute;     
+    text-align: center;     
+    width: 60px;          
+    height: 28px;         
+    padding: 3px;       
+    font: 12px sans-serif;     
+    border: 0px;    
+    border-radius: 8px;     
+    pointer-events: none;     
+}
+
+

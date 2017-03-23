@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>Weather AQ</title>
+    <script type="text/javascript" src="/pico/client.js"></script>
+    <!--# CSS #}-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <p id = "title"> Weather AQ </p>
+    <p class = "sub_title"> Historical trend </p>
+    <div class="aq">
+        <select id = "city"> 
+            <option selected = "selected" class = "opt">Choose your city</option>
+            <option id="opt1" value = "New York" class = "opt">New York</option>
+            <option id="opt2" value = "San Francisco" class = "opt">San Francisco</option>
+            <option id="opt3" value = "Houston" class = "opt">Houston</option>
+            <option id="opt4" value = "Boston" class = "opt">Boston</option>
+        </select>
+        <button id="co" value="co" class="aq_button">CO</button>
+        <button id="no2" value="no2" class="aq_button">NO2</button>
+        <button id="pm25" value="pm25" class="aq_button">PM25</button>
+
+    </div>
+
+    <div id="line_chart"></div>
+
+    <p class = "sub_title"> Prediction </p>
+
+    <select id = "weather"> 
+        <option selected = "selected" class = "opt">Weather</option>
+        <option value = "clear" class = "opt">Clear</option>
+        <option value = "cloudy" class = "opt">Cloudy</option>
+        <option value = "rain" class = "opt">Rain</option>
+        <option value = "tstorms" class = "opt">Tstorms</option>
+        <option value = "partlycloudy" class = "opt">Partly cloudy</option>
+        <option value = "mostlycloudy" class = "opt">Mostly cloudy</option>
+        <option value = "fog" class = "opt">Fog</option>
+    </select>
+    <input type="text" id="inputBox1" class="input-field" placeholder="Temperature (F)" autoFocus />
+    <input type="text" id="inputBox2" class="input-field" placeholder="Wind speed (mph)" autoFocus />
+    <input type="text" id="inputBox3" class="input-field" placeholder="Humidity (%)" autoFocus />
+
+    <div>
+    <button id="submit" value="Submit" class="button">submit</button>
+    <button id="predict" value="Predict" class="button">Predict next few days</button>
+    </div>
+
+    <div id="message"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script> <!-- D3.js -->
+    <script src="prediction.js"></script> 
+    <script src="line_chart.js"></script>
+
+</body>
+</html>
